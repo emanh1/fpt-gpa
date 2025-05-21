@@ -11,7 +11,10 @@
 <img src="screenshot.png"/>
 
 # Installation
-Install the Chrome extenstion [here](https://chrome.google.com/webstore/detail/fpt-gpa/pieacoaichghpileamnhephkedchnlba)
+1. Download or clone the repository.
+2. Open Firefox and navigate to `about:debugging`.
+3. Click on "This Firefox" and then "Load Temporary Add-on".
+4. Select the `manifest.json` file from the extension directory.
 
 # Functionality
 - Calculate semester's average GPA based on the number of subjects and credits of each subject

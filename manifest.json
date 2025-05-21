@@ -9,14 +9,9 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "action": {
-    "default_icon": "icons/icon19.png",
-    "default_title": "FU GPA"
-  },
-  "permissions": ["storage"],
-  "host_permissions": [
-    "http://fap.fpt.edu.vn/Grade/StudentTranscript.aspx",
-    "https://fap.fpt.edu.vn/Grade/StudentTranscript.aspx"
+  "permissions": [
+    "storage",
+    "activeTab"
   ],
   "content_scripts": [
     {
@@ -24,13 +19,13 @@
         "https://fap.fpt.edu.vn/Grade/StudentTranscript.aspx",
         "http://fap.fpt.edu.vn/Grade/StudentTranscript.aspx"
       ],
-      "css": ["css/gpa.css"],
+      "css": ["src/css/gpa.css"],
       "js": [
-        "js/define.js",
-        "js/util.js",
-        "js/const.js",
-        "js/nonGPA.js",
-        "js/logic.js"
+        "src/js/define.js",
+        "src/js/util.js",
+        "src/js/const.js",
+        "src/js/nonGPA.js",
+        "src/js/logic.js"
       ],
       "run_at": "document_end"
     }
